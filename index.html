@@ -6,24 +6,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Kevin Davis</title>
 </head>
 
+
+<div class="row title-row">
+    <h1 class="title"><span class="lighter">Kevin</span><span class='bolder'>Davis</span></h1>
+</div>
+
 <body>
     <div class="container">
         <div class="row">
-            <h1 class="title"><span class="lighter">Kevin</span><span class='bolder'>Davis</span></h1>
-        </div>
-        <div class="row">
-            <div class="col s12">
+            <div class="col s10 offset-s1">
                 <ul class="tabs transparent black-text">
-                    <li class="tab col"><a href="#">About</a></li>
-                    <li class="tab col"><a href="#">Portfolio</a></li>
-                    <li class="tab col"><a href="#">Contact</a></li>
+                    <li data-name="about" class="tab col"><a href="#">About</a></li>
+                    <li data-name="portfolio" class="tab col"><a href="#">Portfolio</a></li>
+                    <li data-name="contact" class="tab col"><a href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
+        <div class="row">
+            <div id="about" class="col s12">
+                <h1>FULL-STACK WEB DEVELOPER</h1>
+                <div class="col s12">
+                    <p class="flow-text">I'm an avid learner and problem solver, and an
+                        absolute joy to be around. I am proficient in HTML5,
+                        CSS3, Javascript, JQuery, Materialize, Bootstrap
+                        Firebase, Node Js, Express, Handlebars, MySQL, and
+                        Hungarian. That last one doesn't come up as much, though.
+                    </p>
+                </div>
+            </div>
+            <div id="portfolio" class="col s12" hidden>
+                <h1>MY PROJECTS <small class="small">(... IN PROGRESS)</small></h1>
+                <div class="col s12 m8 l4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="./assets/images/movie.jpg">
+                            <span class="card-title yellow-text darken-4">Music at the Movies</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://wherding.github.io/Project1/">Visit Site</a>
+                            <a href="https://github.com/wherding/Project1">Github Repo</a>
+                            <span class="activator black-text right"><i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal black-text">
+                            <span class="card-title">Project Description<i class="material-icons right">close</i></span>
+                            <p>A simple movie search that provides movie information as well as 30 second clips from
+                                the soundtrack.</p>
+                            <span class="card-title">Technologies used:</span>
+                            <ul>
+                                <li>jQuery</li>
+                                <li>Materialize</li>
+                                <li>iTunes API</li>
+                                <li>TMDB API</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m8 l4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="./assets/images/tour.jpg">
+                            <span class="card-title bold blue-grey-text text-darken-4">Bands on Tour</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://bands-on-tour.herokuapp.com">Visit Site</a>
+                            <a href="https://github.com/roydavis99/Project2">Github Repo</a>
+                            <span class="activator black-text right"><i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal black-text">
+                            <span class="card-title">Project Description<i class="material-icons right">close</i></span>
+                            <p>Want to follow your favorite band accross the country? We've got your inner "roadie"
+                                covered.</p>
+                            <span class="card-title">Technologies used:</span>
+                            <ul>
+                                <li>Node Js</li>
+                                <li>Express</li>
+                                <li>Handlebars</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m8 l4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="./assets/images/warehouse.jpg">
+                            <span class="card-title red-text">Strand Ind. Inventory</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://strandindinventory.firebaseapp.com">Visit Site</a>
+                            <a href="https://github.com/roydavis99/Project2">Github Repo</a>
+                            <span class="activator black-text right"><i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal black-text">
+                            <span class="card-title">Project Description<i class="material-icons right">close</i></span>
+                            <p>An inventory keeping site that is currently in use. Track, ship, and record inventory
+                                data with your phone and a barcode scanner.</p>
+                            <span class="card-title">Technologies used:</span>
+                            <ul>
+                                <li>Webpack</li>
+                                <li>Firebase Hosting</li>
+                                <li>Firebase Real-time Database</li>
+                                <li>jQuery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="col s12" hidden>
+            <h1>FIND ME ON:</h1>
+            <h4><a href="https://www.linkedin.com/in/kevin-davis-3606baa3/">LinkedIn <i class="material-icons">linkedin</i></a></h4>
+            <h4><a href="https://github.com/dawnpatrol506">Github <i class="fa fa-github"></i></a></h4>
+
+        </div>
+    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
         crossorigin="anonymous"></script>
